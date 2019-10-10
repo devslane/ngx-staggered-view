@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ngx-staggered-view": [
+        "dist/ngx-staggered-view"
+      ],
+      "ngx-staggered-view/*": [
+        "dist/ngx-staggered-view/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

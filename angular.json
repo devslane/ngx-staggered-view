@@ -124,6 +124,41 @@
           }
         }
       }
+    },
+    "ngx-staggered-view": {
+      "projectType": "library",
+      "root": "projects/ngx-staggered-view",
+      "sourceRoot": "projects/ngx-staggered-view/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ngx-staggered-view/tsconfig.lib.json",
+            "project": "projects/ngx-staggered-view/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-staggered-view/src/test.ts",
+            "tsConfig": "projects/ngx-staggered-view/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-staggered-view/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ngx-staggered-view/tsconfig.lib.json",
+              "projects/ngx-staggered-view/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "staggered-view"
 }
