@@ -1,12 +1,10 @@
-import { NgModule } from '@angular/core';
-import { NgxStaggeredViewComponent } from './ngx-staggered-view.component';
-
+import {NgModule} from '@angular/core';
+import {NgxStaggeredViewComponent} from './components/ngx-staggered-view.component';
 
 
 @NgModule({
   declarations: [NgxStaggeredViewComponent],
-  imports: [
-  ],
+  imports: [],
   exports: [NgxStaggeredViewComponent]
 })
-export class NgxStaggeredViewModule { }
+export class NgxStaggeredViewModule {}

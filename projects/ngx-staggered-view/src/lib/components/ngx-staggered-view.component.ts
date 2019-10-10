@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
-  selector: 'lib-ngx-staggered-view',
+  selector: 'ngx-staggered-view',
   template: `
-    <p>
-      ngx-staggered-view works!
-    </p>
+      <p>
+          ngx-staggered-view works!
+      </p>
   `,
   styles: []
 })

@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { NgxStaggeredViewService } from './ngx-staggered-view.service';
+import { NgxStaggeredViewService } from '../ngx-staggered-view.service';
 
 describe('NgxStaggeredViewService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
